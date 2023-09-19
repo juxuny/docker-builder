@@ -1,7 +1,6 @@
 #!/bin/bash
 BASE_IMAGE="registry.cn-shenzhen.aliyuncs.com/juxuny-public/builder"
 function publish() {
-	cd "$1" || exit 255
 	docker push $BASE_IMAGE:"$1" 
 }
 
