@@ -6,7 +6,7 @@ download_link() {
         if [ ! -f $base_name ]; then
                 echo "not found: $base_name"
                 echo "downloading: $url"
-                curl --output $base_name $url
+                curl -L --output $base_name $url
         fi
 }
 
