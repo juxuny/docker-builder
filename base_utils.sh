@@ -9,6 +9,3 @@ download_link() {
                 curl -L --output $base_name $url
         fi
 }
-
-download_link  https://archive.apache.org/dist/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
-download_link https://dl.wzxstudio.com/cache/jdk/jdk-11.0.18_linux-x64_bin.tar.gz 

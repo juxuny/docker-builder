@@ -1,0 +1,24 @@
+HOST hadoop-master
+HostName hadoop-master
+User root
+Port 2122
+StrictHostKeyChecking no
+
+HOST hadoop-slave1
+HostName hadoop-slave1
+User root
+Port 2122
+StrictHostKeyChecking no
+
+HOST hadoop-slave2
+HostName hadoop-slave2
+User root
+Port 2122
+StrictHostKeyChecking no
+
+HOST hadoop-slave3
+HostName hadoop-slave3
+User root
+Port 2122
+StrictHostKeyChecking no
+
