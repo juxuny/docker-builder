@@ -2,7 +2,6 @@
 set -ex
 src_dir=/open-source
 
-
 function download_gcc_source() {
 	version="$1"
 	if [ ! -d "${src_dir}" ]; then mkdir ${src_dir}; fi
@@ -21,8 +20,6 @@ function compile_and_install() {
 	make && make install 
 	cd - && rm -rf gcc-${version}
 }
-
-apt-get update && apt-get install -y curl gcc g++ make
 
 version_list="11.3.0"
 for version in ${version_list}; do

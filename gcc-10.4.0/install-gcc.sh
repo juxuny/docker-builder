@@ -15,7 +15,6 @@ function compile_and_install() {
 	cd ${src_dir}
 	tar xvzf gcc-${version}.tar.gz
 	cd gcc-${version}
-	./contrib/download_prerequisites
 	./configure
 	make && make install 
 	cd - && rm -rf gcc-${version}
